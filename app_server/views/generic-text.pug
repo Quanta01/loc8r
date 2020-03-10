@@ -6,7 +6,4 @@ block content
       h1= title
   .row
     .col-12.col-lg-8
-      p
-        | Loc8r is being created to help people find places with wifi access, where they can sit down and get a bit of work done.
-        | <br /><br />
-        | This site is currently under development.
+      p !{(content).replace(/\n/g, '<br/>')}
